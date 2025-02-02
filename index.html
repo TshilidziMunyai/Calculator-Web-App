@@ -17,46 +17,36 @@
             text-decoration: none; 
         }
 
-        .getstarted-btn {
-            background-color:#ffcc00;
-            color: black;
-            border: 1cap;
-            padding: 10px 30px;
-            font-size: 1em;
-            border-radius: -10px;
-            cursor: pointer;
-            text-align: center;
-        }
-
-        .getstarted-btn:hover {
-            background-color: darkbrown; 
-        }
 
         a:hover {
             color: white;
         }
 
         .image-container {
-            margin-top: -300%;
-            margin-left: -310%;
-            width: -300px;
-            height: -300px;
+            display: flex ;
+            justify-content: center;
+            width: 100%;
         }
+
 
         .image {
             width: 150px;
             height: 150px;
         }
-
-    </style>
+        
+        </style>
 </head>
 <body>
     
-    <div class="calculator">
+    <div class="calculator-container">
+        <div class="image-container">
+            <a href="home.html"> 
+                <img class="image" src="images/home.png" alt="cal logo">
+            </a>
+        </div>
         <div class="display">
             <input type="text" id="calc-display" readonly>
         </div>
-            <div class="calculator">
                 <div class="calculator">
                     <div class="buttons">
                         <button class="number-button" onclick="handleInput('1')">1</button>
@@ -100,8 +90,7 @@
                         <button class="delete-button" onclick="deleteLast()">Delete</button>
                         <button class="clear-button" onclick="clearDisplay()">AC</button>
                     </div>                                       
-                </div>
-            </div>           
+                </div>           
     <script src="js/script.js"></script>
 
 </body>
@@ -110,10 +99,5 @@
 
 <div>
     <header>
-        <div class="image-container">
-            <a href="home.html"> 
-                <img class="image" src="images/home.png" alt="cal logo">
-            </a>
-        </div>
         </header>
 </div>
