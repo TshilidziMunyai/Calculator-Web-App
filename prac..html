@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .calculator {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      background: #e6f0ff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      user-select: none;
+    }
+
+    .button:active {
+      background: #d4e3ff;
+    }
+
+    .button.blue {
+      background: #007bff;
+      color: white;
+    }
+
+    .button.blue:active {
+      background: #0056b3;
+    }
+
+    .button span {
+      display: block;
+    }
+
+    .row-1 {
+      grid-column: span 6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <!-- Row 1: Mode -->
+    <div class="row-1">
+      <span>Rad</span>
+      <span>|</span>
+      <span>Deg</span>
+    </div>
+
+    <!-- Row 2 -->
+    <button class="button">Inv</button>
+    <button class="button">sin</button>
+    <button class="button">ln</button>
+    <button class="button">7</button>
+    <button class="button">8</button>
+    <button class="button">9</button>
+
+    <!-- Row 3 -->
+    <button class="button">&pi;</button>
+    <button class="button">cos</button>
+    <button class="button">log</button>
+    <button class="button">4</button>
+    <button class="button">5</button>
+    <button class="button">6</button>
+
+    <!-- Row 4 -->
+    <button class="button">e</button>
+    <button class="button">tan</button>
+    <button class="button">&radic;</button>
+    <button class="button">1</button>
+    <button class="button">2</button>
+    <button class="button">3</button>
+
+    <!-- Row 5 -->
+    <button class="button">Ans</button>
+    <button class="button">EXP</button>
+    <button class="button">x<sup>y</sup></button>
+    <button class="button">0</button>
+    <button class="button">.</button>
+    <button class="button blue">=</button>
+
+    <!-- Row 6 -->
+    <button class="button">AC</button>
+    <button class="button">%</button>
+    <button class="button">&divide;</button>
+    <button class="button">&times;</button>
+    <button class="button">&minus;</button>
+    <button class="button">+</button>
+  </div>
+</body>
+</html>

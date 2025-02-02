@@ -3,43 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scientific Calculator</title>
+    <head>
+        <title>Scientific Calculator</title>
+        <link rel="icon" type="image/png" href="../images/cutie.png">
+    </head>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="..js/script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        a {
+            text-decoration: none; 
+        }
+
+        .getstarted-btn {
+            background-color:#ffcc00;
+            color: black;
+            border: 1cap;
+            padding: 10px 30px;
+            font-size: 1em;
+            border-radius: -10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .getstarted-btn:hover {
+            background-color: darkbrown; 
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        .image-container {
+            margin-top: -300%;
+            margin-left: -310%;
+            width: -300px;
+            height: -300px;
+        }
+
+        .image {
+            width: 150px;
+            height: 150px;
+        }
+
+    </style>
 </head>
 <body>
+    
     <div class="calculator">
         <div class="display">
             <input type="text" id="calc-display" readonly>
         </div>
-        <div class="buttons">
-            <button onclick="handleInput('sin')">sin</button>
-            <button onclick="handleInput('cos')">cos</button>
-            <button onclick="handleInput('tan')">tan</button>
-            <button onclick="handleInput('sqrt')">√</button>
-            <button onclick="handleInput('pow')">x<sup>y</sup></button>
+            <div class="calculator">
+                <div class="calculator">
+                    <div class="buttons">
+                        <button class="number-button" onclick="handleInput('1')">1</button>
+                        <button class="number-button" onclick="handleInput('2')">2</button>
+                        <button class="number-button" onclick="handleInput('3')">3</button>
+                        <button class="number-button" onclick="handleInput('4')">4</button>
+                        <button class="number-button" onclick="handleInput('5')">5</button>
+                        <button class="number-button" onclick="handleInput('6')">6</button>
+                        <button class="number-button" onclick="handleInput('8')">8</button>
+                        <button class="number-button" onclick="handleInput('7')">7</button>
+                        <button class="number-button" onclick="handleInput('9')">9</button>
+                        <button class="number-button" onclick="handleInput('0')">0</button>
+                        <button class="equal-button" onclick="calculate()">=</button>
 
-            <button onclick="handleInput('7')">7</button>
-            <button onclick="handleInput('8')">8</button>
-            <button onclick="handleInput('9')">9</button>
-            <button onclick="handleInput('/')">/</button>
-            <button onclick="handleInput('4')">4</button>
-            <button onclick="handleInput('5')">5</button>
-            <button onclick="handleInput('6')">6</button>
-            <button onclick="handleInput('*')">*</button>
-            <button onclick="handleInput('1')">1</button>
-            <button onclick="handleInput('2')">2</button>
-            <button onclick="handleInput('3')">3</button>
-            <button onclick="handleInput('-')">-</button>
-            <button onclick="handleInput('0')">0</button>
-            <button onclick="handleInput('.')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="handleInput('+')">+</button>
+                        <button class="operator-button" onclick="handleInput('*')">×</button>
+                        <button class="operator-button" onclick="handleInput('-')">-</button>
+                        <button class="operator-button" onclick="handleInput('+')">+</button>
+                        <button class="operator-button" onclick="handleInput('/')">÷</button>
+                        <button class="function-button" onclick="handleInput('.')">.</button>
 
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="deleteLast()">DEL</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+                        <button class="function-button" onclick="handleInput('sin')">sin</button>
+                        <button class="function-button" onclick="handleInput('cos')">cos</button>
+                        <button class="function-button" onclick="handleInput('tan')">tan</button>
+                        <button class="function-button" onclick="handleInput('log')">log</button>
+                        <button class="function-button" onclick="handleInput('e')">e</button>
+                        <button class="function-button" onclick="handleInput('Ans')">Ans</button>
+                        <button class="function-button" onclick="handleInput('x^y')">x<sup>y</sup></button>
+                        <button class="function-button" onclick="handleInput('!')">n!</button>
+                        <button class="function-button" onclick="handleInput('!')">Inv</button>
+                        
+                        <button class="operator-button" onclick="handleInput('%')">%</button>
+                        <button class="operator-button" onclick="handleInput('(')">(</button>
+                        <button class="operator-button" onclick="handleInput(')')">)</button>
+                        
+                        <button class="function-button" onclick="handleInput('√')">√</button>
+                        <button class="function-button" onclick="handleInput('√')">X!</button>
+                        <button class="function-button" onclick="handleInput('EXP')">EXP</button>
+                        <button class="function-button" onclick="handleInput('π')">π</button>
+                        <button class="function-button" onclick="handleInput('ln')">ln</button>
+                    
+                        <button class="delete-button" onclick="deleteLast()">Delete</button>
+                        <button class="clear-button" onclick="clearDisplay()">AC</button>
+                    </div>                                       
+                </div>
+            </div>           
+    <script src="../js/script.js"></script>
+
 </body>
 </html>
+</div>
+
+<div>
+    <header>
+        <div class="image-container">
+            <a href="home.html"> 
+                <img class="image" src="../images/home.png" alt="cal logo">
+            </a>
+        </div>
+        </header>
+</div>
